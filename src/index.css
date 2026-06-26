@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #1A1814;
+    color: #F2EDE4;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #C4832A #221F1A;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #221F1A;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #C4832A;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #C4832A;
+    color: #1A1814;
+    @apply font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+  }
+  .btn-primary:hover {
+    background-color: #D4922E;
+    box-shadow: 0 0 20px rgba(196, 131, 42, 0.3);
+  }
+
+  .btn-secondary {
+    border: 1px solid #C4832A;
+    color: #C4832A;
+    @apply font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+  }
+  .btn-secondary:hover {
+    background-color: #C4832A;
+    color: #1A1814;
+  }
+
+  .card {
+    background-color: #221F1A;
+    @apply rounded-2xl border border-white/5 p-5;
+  }
+
+  .card-elevated {
+    background-color: #2A2620;
+    @apply rounded-2xl border border-white/10 p-5;
+  }
+
+  .nav-link {
+    @apply flex flex-col items-center gap-1 transition-colors duration-200;
+    color: rgba(242, 237, 228, 0.5);
+  }
+  .nav-link:hover {
+    color: #C4832A;
+  }
+
+  .nav-link.active {
+    color: #C4832A;
+  }
+
+  .input-field {
+    background-color: #2F2A24;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #F2EDE4;
+    @apply rounded-xl px-4 py-3 focus:outline-none transition-colors;
+  }
+  .input-field:focus {
+    border-color: #C4832A;
+  }
+  .input-field::placeholder {
+    color: rgba(242, 237, 228, 0.3);
+  }
+}
+
+.font-display {
+  font-family: Georgia, Cambria, serif;
+}
+
+/* Fretboard animations */
+.fret-note {
+  transition: all 0.2s ease;
+}
+
+.fret-note:hover {
+  filter: brightness(1.3);
+}
+
+/* XP bar animation */
+@keyframes xp-fill {
+  from { width: 0; }
+}
+
+.xp-bar-fill {
+  animation: xp-fill 1s ease-out;
+}
+
+/* Streak flame */
+@keyframes flicker {
+  0%, 100% { transform: scale(1) rotate(-2deg); }
+  50% { transform: scale(1.05) rotate(2deg); }
+}
+
+.streak-flame {
+  animation: flicker 1.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Pulse for active lesson */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(196, 131, 42, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(196, 131, 42, 0.6); }
+}
+
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}

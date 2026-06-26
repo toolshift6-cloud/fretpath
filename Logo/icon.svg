@@ -1,0 +1,74 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#1a1612"/>
+
+  <!-- Guitar neck -->
+  <rect x="382" y="60" width="260" height="620" rx="16" fill="#2c2118"/>
+
+  <!-- Nut -->
+  <rect x="382" y="140" width="260" height="16" fill="#5c4a32"/>
+
+  <!-- Fret lines -->
+  <line x1="382" y1="238" x2="642" y2="238" stroke="#8a7355" stroke-width="5"/>
+  <line x1="382" y1="328" x2="642" y2="328" stroke="#8a7355" stroke-width="4"/>
+  <line x1="382" y1="408" x2="642" y2="408" stroke="#8a7355" stroke-width="4"/>
+  <line x1="382" y1="478" x2="642" y2="478" stroke="#8a7355" stroke-width="4"/>
+  <line x1="382" y1="540" x2="642" y2="540" stroke="#8a7355" stroke-width="4"/>
+  <line x1="382" y1="596" x2="642" y2="596" stroke="#8a7355" stroke-width="4"/>
+  <line x1="382" y1="646" x2="642" y2="646" stroke="#8a7355" stroke-width="4"/>
+
+  <!-- Strings -->
+  <line x1="412" y1="140" x2="412" y2="680" stroke="#d4c8b0" stroke-width="2.5" opacity="0.65"/>
+  <line x1="452" y1="140" x2="452" y2="680" stroke="#d4c8b0" stroke-width="3.5" opacity="0.62"/>
+  <line x1="492" y1="140" x2="492" y2="680" stroke="#d4c8b0" stroke-width="4.5" opacity="0.58"/>
+  <line x1="532" y1="140" x2="532" y2="680" stroke="#d4c8b0" stroke-width="5.5" opacity="0.52"/>
+  <line x1="582" y1="140" x2="582" y2="680" stroke="#d4c8b0" stroke-width="7"   opacity="0.45"/>
+  <line x1="622" y1="140" x2="622" y2="680" stroke="#d4c8b0" stroke-width="9"   opacity="0.38"/>
+
+  <!-- Inlay dots -->
+  <circle cx="512" cy="370" r="11" fill="#3a2e22"/>
+  <circle cx="512" cy="510" r="11" fill="#3a2e22"/>
+
+  <!-- Dashed path trail -->
+  <polyline
+    points="622,510 582,430 532,370 492,280 452,280 412,178"
+    stroke="#f5a623" stroke-width="3" fill="none" opacity="0.38"
+    stroke-dasharray="12 8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Trail dots fading -->
+  <circle cx="622" cy="510" r="16" fill="#f5a623" opacity="0.18"/>
+  <circle cx="582" cy="430" r="18" fill="#f5a623" opacity="0.28"/>
+  <circle cx="532" cy="370" r="20" fill="#f5a623" opacity="0.40"/>
+  <circle cx="492" cy="280" r="22" fill="#f5a623" opacity="0.55"/>
+  <circle cx="452" cy="280" r="22" fill="#f5a623" opacity="0.65"/>
+
+  <!-- Main glowing dot -->
+  <circle cx="412" cy="178" r="50" fill="#f5a623" opacity="0.10"/>
+  <circle cx="412" cy="178" r="32" fill="#f5a623" opacity="0.28"/>
+  <circle cx="412" cy="178" r="20" fill="#f5a623"/>
+  <circle cx="412" cy="178" r="7"  fill="#ffffff" opacity="0.92"/>
+
+  <!-- Divider -->
+  <line x1="60" y1="720" x2="964" y2="720" stroke="#332a22" stroke-width="2"/>
+
+  <!-- Wordmark -->
+  <text
+    x="512" y="850"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="160"
+    font-weight="700"
+    fill="#f0e6d0"
+    letter-spacing="-3">Fret<tspan fill="#f5a623">Path</tspan></text>
+
+  <!-- Tagline -->
+  <text
+    x="512" y="930"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="36"
+    fill="#6a5e52"
+    letter-spacing="10">LEARN GUITAR</text>
+
+</svg>

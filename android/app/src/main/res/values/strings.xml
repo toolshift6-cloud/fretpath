@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FretPath</string>
+    <string name="title_activity_main">FretPath</string>
+    <string name="package_name">com.fretpath.app</string>
+    <string name="custom_url_scheme">com.fretpath.app</string>
+</resources>
